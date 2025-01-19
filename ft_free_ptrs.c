@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   free_ptrs.c                                        :+:      :+:    :+:   */
+/*   ft_free_ptrs.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eproust <contact@edouardproust.dev>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 16:54:41 by eproust           #+#    #+#             */
-/*   Updated: 2024/12/20 17:51:48 by eproust          ###   ########.fr       */
+/*   Updated: 2025/01/19 14:58:55 by eproust          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*free_ptrs(int count, ...)
+void	*ft_free_ptrs(int count, ...)
 {
 	va_list	args;
 	void	**ptr;
@@ -43,7 +43,7 @@ int main()
 	if (!test)
         return (1);
     printf("Before free: %s\n", test);
-    free_ptrs_generic(1, &test);
+    ft_free_ptrs(1, &test);
     printf("After free: %s\n", test);
     return (0);
 }

@@ -1,11 +1,12 @@
 NAME = libft.a
 
-SRCS = free_matrix.c \
-	free_ptrs.c \
-	ft_atoi.c \
+SRCS = ft_atoi.c \
 	ft_atol.c \
 	ft_bzero.c \
 	ft_calloc.c \
+	ft_error.c \
+	ft_free_ptrs.c \
+	ft_free_split.c \
 	ft_isalnum.c \
 	ft_isalpha.c \
 	ft_isascii.c \
@@ -19,6 +20,7 @@ SRCS = free_matrix.c \
 	ft_memcpy.c \
 	ft_memmove.c \
 	ft_memset.c \
+	ft_perror.c \
 	ft_print_char.c \
 	ft_printf.c \
 	ft_print_hexa.c \
